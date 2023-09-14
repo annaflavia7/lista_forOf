@@ -6,18 +6,16 @@
     //Faça um programa que identifique os números pares e apresente-os ao fim do programa, ordenados de forma crescente.
 
     //ENTRADA
-    let listaDeNumeros = [1, 4, 6, 8, 898, 7, 43, 2980, 3500, 10];
+     let listaDeNumeros = [1, 4, 6, 8, 898, 7, 43, 2980, 3500, 10];
 
     //PROCESSAMENTO
-    let numerosPares = [];
-
-    for (const números of listaDeNumeros) {
-        if (numero % 2 == 0){
-            numerosPares.push(numero);
+    let pares = [];
+    for (let item of listaDeNumeros) {
+        if ((item % 2) == 0) {
+            pares.push(item);
         }
     }
-
     //SAÍDA
-    document.write(`Os números  pares  são ${numerosPares.sort((a, b)).join(", ")}`);
+    alert(`Os pares são ${pares.sort((a, b) => a-b).join(", ")}.`);
 
 </script>
